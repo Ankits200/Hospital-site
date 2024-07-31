@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Beniwal Hospital</title>
+  <meta content="Beniwal Hospital offers top-quality healthcare services including General Surgery, Urology Surgery, Plastic Surgery, Medicine, Gynaecology & Obstetrics, and Orthopaedic Surgery. We provide state-of-the-art facilities and 24*7 ambulance services." name="description">
+  <meta content="Beniwal Hospital, healthcare, General Surgery, Urology Surgery, Plastic Surgery, Medicine, Gynaecology, Obstetrics, Orthopaedic Surgery, Lab, X-Ray, Ultrasound, Ambulance, Pharmacy, Physiotherapist" name="keywords">
+</head>
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/logo.png') }}" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+
+<!-- FontAwesome Free CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+<!-- GLightbox CSS -->
+<link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+
+<!-- Swiper CSS -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@9.3.2/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+  <!-- Main CSS File -->
+  <link href="{{ url_for('static',filename='css/main.css') }}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:beniwalhospitalbhadra@gmail.com">beniwalhospitalbhadra@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+919587627222</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://www.facebook.com/share/q7epzwa3dD8Zsxje/?mibextid=LQQJ4d" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <span class="logo d-flex align-items-center me-auto">
+
+          <img src="{{ url_for('static',filename='img/logo.png') }}" alt="logo">
+          <h1 class="sitename">Beniwal Hospital</h1>
+        </span>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#" class="active">Home<br></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <img src="{{ url_for('static',filename='img/hero-bg.jpg')}}" alt="" data-aos="fade-in">
+
+      <div class="container position-relative">
+
+        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+          <h2>BENIWAL HOSPITAL</h2>
+          <p>Where Hope and Healing Meet</p>
+        </div><!-- End Welcome -->
+
+        <div class="content row gy-4">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+              <h3>Why Choose Beniwal Hospital?</h3>
+              <p>Our hospital offers a wide range of specialized departments, including General Surgery, Urology Surgery, Plastic Surgery, Medicine, Gynaecology &amp; Obstetrics, and Orthopaedic Surgery. This ensures that you receive comprehensive care under one roof.<br></p>
+              <div class="text-center">
+                <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Why Box -->
+
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="d-flex flex-column justify-content-center">
+              <div class="row gy-4">
+
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
+                    <i class="bi bi-clipboard-data"></i>
+                    <h4>Expert Medical Team<br></h4>
+                    <p>Our highly qualified and experienced team of surgeons, physicians, and healthcare professionals is dedicated.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
+                    <i class="bi bi-gem"></i>
+                    <h4>Integrated Healthcare Services</h4>
+                    <p>Our multidisciplinary team works collaboratively to provide integrated healthcare services.&nbsp;</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
+                    <i class="bi bi-inboxes"></i>
+                    <h4>Commitment to Quality and Safety</h4>
+                    <p>We adhere to the highest standards of quality and safety in all our medical practices.</p>
+                  </div>
+                </div><!-- End Icon Box -->
+
+              </div>
+            </div>
+          </div>
+        </div><!-- End  Content-->
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+</div>
+      <div class="container">
+
+        <div class="row gy-4 gx-5">
+
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
+            <img src="{{ url_for('static',filename='img/Kapil.jpeg') }}" class="mt-2 img-fluid custom-img" alt="">
+            <div class="image-caption text-center mt-2">
+              <h5 class="image-name"><strong>Dr. Kapil Beniwal</strong></h5>
+              <p class="image-designation"><em>Founder</em></p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>About Us</h3>
+            <p>
+              Welcome to Beniwal Hospital, located in the heart of Bhadra, where compassionate care meets state-of-the-art medical technology. Established in , our hospital has been dedicated to providing exceptional healthcare services to our community.
+            </p>
+                <h4>World Record in Pediatric Surgery</h4>
+                <p>The youngest person to have gallstones and gallbladder removed is Haabil (India b. 14 August 2014), who was 273 days old when he had the operation at Beniwal Hospital, Srikaranpur, India, on 15 May 2015.</p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-vial-circle-check"></i>
+                <div>
+                  <h5>Our Vision</h5>
+                  <p>To provide excellent healthcare services based on international standards (Medical &amp; Aestheticallv)</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-pump-medical"></i>
+                <div>
+                  <h5>Our Commitment</h5>
+                  <p>Our commitment to innovation ensures that we remain at the forefront of medical care.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-heart-circle-xmark"></i>
+                <div>
+                  <h5>Our Mission</h5>
+                  <p>By making continous efforts to maintain high quality levels of patient care at affordable cost.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fa-solid fa-user-doctor"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Doctors</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fa-regular fa-hospital"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Departments</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fas fa-flask"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Labs</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="fas fa-award"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Awards</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+ <!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>Explore the wide range of medical services we provide to ensure your health and well-being.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="fas fa-vials"></i>
+          </div>
+            <h3>Lab</h3>
+          <p>High-quality laboratory services for accurate and timely diagnosis.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="fas fa-x-ray"></i>
+          </div>
+            <h3>X-Ray</h3>
+         
+          <p>State-of-the-art X-ray facilities for precise imaging and diagnostics.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="fas fa-soundwave"></i>
+          </div>
+          
+            <h3>Ultrasound</h3>
+          <p>Comprehensive ultrasound services for a variety of medical needs.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="fas fa-ambulance"></i>
+          </div>
+            <h3>24*7 Ambulance</h3>
+
+          <p>Emergency ambulance services available 24/7 for quick response.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="fas fa-pills"></i>
+          </div>
+            <h3>Pharmacy</h3>
+
+          <p>Fully stocked pharmacy with a wide range of medications and supplies.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+            <h3>Physiotherapist</h3>
+
+          <p>Expert physiotherapy services for rehabilitation and pain management.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Services Section -->
+
+    <!-- Departments Section -->
+    <section id="departments" class="departments section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Departments</h2>
+        <p>Beniwal Hospital is committed to providing exceptional healthcare services across these departments, ensuring that each patient receives personalized and comprehensive treatment.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">General Surgery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Urology Surgery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Plastic Surgery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Medicine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Gynaecology &amp; Obstetrics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">Orthopaedic Surgery Department</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="departments-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>General Surgery</h3>
+                    <p class="fst-italic">Our General Surgery Department provides comprehensive surgical care for a wide range of conditions. Our skilled surgeons are equipped to handle various procedures, from routine appendectomies to complex hernia repairs, ensuring patients receive the highest quality of care.<br></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static',filename='img/departments-1.png') }}" alt="Surgery department photo" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Urology Surgery Department<br></h3>
+                    <p class="fst-italic">The Urology Surgery Department specializes in the diagnosis and treatment of urinary tract and male reproductive system disorders. Our expert urologists use advanced surgical techniques to address conditions such as kidney stones, prostate issues, and bladder problems, offering both minimally invasive and traditional surgical options.<br></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static',filename='img/departments-2.png') }}" alt="Urology department" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Plastic Surgery Department</h3>
+                    <p class="fst-italic">The Plastic Surgery Department at Beniwal Hospital is dedicated to enhancing and reconstructing physical appearance through advanced surgical techniques. Our experienced plastic surgeons provide a wide range of services, including cosmetic surgery, reconstructive procedures, and treatments for burns and trauma.<br></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static',filename='img/departments-3.png') }}" alt="Plastic surgery" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Medicine Department</h3>
+                    <p class="fst-italic">Our Medicine Department focuses on the prevention, diagnosis, and treatment of adult diseases. With a team of experienced physicians, we offer comprehensive care for chronic conditions, acute illnesses, and preventive health services, ensuring our patients maintain optimal health and well-being.<br></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static',filename='img/departments-4.png') }}" alt="medicine department" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Gynaecology &amp; Obstetrics Department</h3>
+                    <p class="fst-italic">The Gynaecology &amp; Obstetrics Department provides specialized care for women's health issues. From routine gynecological exams and prenatal care to complex obstetric surgeries and fertility treatments, our team is committed to supporting women through all stages of life with compassionate and expert care.<br></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static',filename='img/departments-5.png') }}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-6">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Orthopaedic Surgery Department</h3>
+                    <p class="fst-italic">The Orthopaedic Surgery Department at Beniwal Hospital specializes in diagnosing and treating musculoskeletal conditions. We offer advanced surgical and non-surgical treatments for bones, joints, ligaments, and muscles to help patients regain mobility and alleviate pain. Our expert team is committed to providing high-quality, personalized care for optimal outcomes.<br></p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{{ url_for('static',filename='img/departments-6.png') }}" alt="orthopaedic" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Departments Section -->
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Doctors</h2>
+        <p>At Beniwal Hospital, we take pride in our team of highly skilled and compassionate doctors who are dedicated to providing exceptional care. Our medical professionals are leaders in their fields. Meet Our Expert Team</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{{ url_for('static',filename='img/doctors/manish.jpeg') }}" class="img-fluid" alt="Dr. Manish"></div>
+              <div class="member-info">
+                <h4>Dr. Manish Thalor</h4>
+                <span>Ortho Surgeon</span>
+                <p>Dedicated to restoring mobility and enhancing quality of life through advanced orthopaedic care.</p>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{{ url_for('static',filename='img/doctors/Mukesh.jpeg') }}" class="img-fluid" alt="Dr. Mukesh"></div>
+              <div class="member-info">
+                <h4>Dr. Mukesh Chhimpa</h4>
+                <span>Urologist</span>
+                <p>Expert in diagnosing and treating urinary tract conditions with precision and compassion.</p>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{{ url_for('static',filename='img/doctors/Trivendar.jpeg') }}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Trivendar Jangir</h4>
+                <span>Medicine</span>
+                <p>Committed to providing comprehensive medical care for a wide range of health issues.</p>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="{{ url_for('static',filename='img/doctors/vikas.jpeg') }}" class="img-fluid" alt="Dr. vikash"></div>
+              <div class="member-info">
+                <h4>Dr. Vikas Jain</h4>
+                <span>Plastic Surgery</span>
+                <p>Transforming lives with skilled plastic and reconstructive surgery.</p>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Doctors Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to some of the most common questions about Beniwal Hospital.</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+    
+        <div class="row justify-content-center">
+    
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+    
+            <div class="faq-container">
+    
+              <div class="faq-item faq-active">
+                <h3>What are the different amenities available for patients at Beniwal Hospital?</h3>
+                <div class="faq-content">
+                  <p>Beniwal Hospital offers various amenities for patients, including wheelchair-accessible parking, entrance, and exit facilities.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+    
+              <div class="faq-item faq-active">
+                <h3>Is Beniwal Hospital clean and hygienic?</h3>
+                <div class="faq-content">
+                  <p>Almost all hospitals maintain high-level cleanliness to keep patients safe from any infection. For more specific information on the cleanliness maintained at Beniwal Hospital, you can check customer ratings and reviews or visit the hospital in person.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+    
+              <div class="faq-item faq-active">
+                <h3>Do hospitals provide ambulance services?</h3>
+                <div class="faq-content">
+                  <p>Yes, most hospitals provide ambulance services for transporting patients to the hospital and back. It is recommended to check with Beniwal Hospital for detailed information on their ambulance services.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+    
+              <div class="faq-item faq-active">
+                <h3>Can I visit a patient any time of the day in a hospital?</h3>
+                <div class="faq-content">
+                  <p>No, there are fixed visiting hours at hospitals. You can contact Beniwal Hospital for their specific visiting hours.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+    
+            </div>
+    
+          </div><!-- End Faq Column-->
+    
+        </div>
+      </div>
+    </section><!-- End Faq Section -->
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>A Glimpse Into Our World-Class Care</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static',filename='img/gallery/gallery-1.jpg') }}" class="glightbox" data-gallery="images-gallery">
+                <img src="{{ url_for('static',filename='img/gallery/gallery-1.jpg') }}" alt="exterior" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static',filename='img/gallery/gallery-2.jpg') }}" class="glightbox" data-gallery="images-gallery">
+                <img src="{{ url_for('static',filename='img/gallery/gallery-2.jpg') }}" alt="interior" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static',filename='img/gallery/gallery-3.jpg') }}" class="glightbox" data-gallery="images-gallery">
+                <img src="{{ url_for('static',filename='img/gallery/gallery-3.jpg') }}" alt="interior" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static',filename='img/gallery/gallery-4.jpg') }}" class="glightbox" data-gallery="images-gallery">
+                <img src="{{ url_for('static',filename='img/gallery/gallery-4.jpg') }}" alt="exterior" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{{ url_for('static',filename='img/gallery/gallery-5.jpeg') }}" class="glightbox" data-gallery="images-gallery">
+                <img src="{{ url_for('static',filename='img/gallery/gallery-5.jpeg') }}" alt="award" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    
+
+     <!-- Contact Section -->
+     <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Whenever you need us contact us any time</p>
+      </div><!-- End Section Title -->
+
+      <div class="mb-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.8491865376814!2d75.17494727530767!3d29.110133475407284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3913efc78609d127%3A0xdd841a5a332a0ca1!2sVDS%20PALACE!5e0!3m2!1sen!2sin!4v1722225945119!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
+
+      <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Near VDS PALACE Mandi Aadampur Road, Bhadra, Bhadra - 335501</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <a href="https://wa.me/919587627222" target="_blank">
+                  <p><u>+91 95876 27222</u></p>
+              </a>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <a href="mailto:beniwalhospitalbhadra@gmail.com"><p><u>beniwalhospitalbhadra@gmail.com</u></p></a>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+          
+          <div class="col-lg-8">
+            <form action="{{ url_for('contact') }}" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200" id ="contactForm">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+            <span class="sitename">Beniwal Hospital</span>
+          <div class="footer-contact pt-3">
+            <p><span style="font-family: Roboto, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, &quot;Liberation Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; background-color: rgb(255, 255, 255);">Near VDS PALACE Mandi Aadampur Road,&nbsp;</span></p><p><span style="font-family: Roboto, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, &quot;Liberation Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; background-color: rgb(255, 255, 255);">Bhadra, Bhadra - 335501</span><br></p>
+            <p class="mt-3"><strong>Phone:</strong>&nbsp;<span style="background-color: rgb(255, 255, 255); color: var(--default-color); font-family: var(--default-font); font-weight: var(--bs-body-font-weight); text-align: var(--bs-body-text-align);">+91 9587627222</span></p>
+            <p><strong>Email:</strong>&nbsp;<span style="background-color: rgb(255, 255, 255); color: var(--default-color); font-family: var(--default-font); font-weight: var(--bs-body-font-weight); text-align: var(--bs-body-text-align);">beniwalhospitalbhadra@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.facebook.com/share/q7epzwa3dD8Zsxje/?mibextid=LQQJ4d" target="_blank"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li>Lab</li>
+            <li>X-Ray</li>
+            <li>Ultrasound</li>
+            <li>24*7Ambulance</li>
+            <li>Pharmacy</li>
+            <li>Physiotherapist</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
+  
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+  
+  <!-- PureCounter Vanilla JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.2.1/dist/purecounter_vanilla.js"></script>
+  
+  <!-- Swiper Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9.3.2/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+<!--    
+  all for contact form -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>    $(document).ready(function() {
+    $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
+        $('.loading').show();
+        $('.error-message').hide();
+        $('.sent-message').hide();
+
+        $.ajax({
+            type: 'POST',
+            url: '/contact',
+            data: $(this).serialize(),
+            success: function(response) {
+                $('.loading').hide();
+                alert(response.message);
+            },
+            error: function(response) {
+                $('.loading').hide();
+                alert(response.responseJSON.message);
+            }
+        });
+    });
+});
+</script>
+<!-- the contact form prompt msg sent successfully -->
+</body>
+
+</html>
