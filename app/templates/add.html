@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block title %}Add A New Patient{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div class="alert alert-info alert-{{catagory}}">
+            <ul class="mb-0">
+              {% for message in messages %}
+                <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      {% endwith %}
+
+      <h1>Add a New Patient into the Database</h1>
+      {{ wtf.quick_form(form) }}
+
+      <p class="space-above">
+        <a href="{{ url_for('dashboard') }}" class="btn btn-outline-primary btn-sm mt-3">See All Patients</a>
+      </p>
+
+    </div>
+  </div>
+</div>
+{% endblock %}
